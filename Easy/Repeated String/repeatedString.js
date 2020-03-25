@@ -6,7 +6,6 @@ function repeatedString(s, n) {
     }
 
     let dictionary = {'a': 0}
-    
     const length = Math.floor(n / s.length)
 
     for (let i = 0; i < s.length; i++) {
@@ -16,7 +15,6 @@ function repeatedString(s, n) {
     }
 
     let remaining = n - s.length * length
-
     let total = dictionary['a'] * length
 
     if (remaining > 0) {

@@ -1,6 +1,5 @@
 def repeatedString(s, n):
     dictionary = {'a': 0}
-
     length = n // len(s)
 
     if 'a' not in s:
@@ -11,7 +10,6 @@ def repeatedString(s, n):
             dictionary['a'] += 1
     
     remaining = n - len(s) * length
-
     total = int(dictionary['a'] * length)
 
     if remaining > 0:
